@@ -8,6 +8,12 @@
   gap: 10px;
   padding: 10px;
 
+  nav a[href='/web.lab2/group'] {
+    color: #0056b3;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
   main {
     border: $border-style;
     padding: $padding-base;
