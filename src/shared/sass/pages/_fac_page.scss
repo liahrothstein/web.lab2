@@ -1,0 +1,79 @@
+@use '../abstracts' as *;
+
+.facPage {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
+  gap: 10px;
+  padding: 10px;
+
+  nav a[href='/web.lab2/fac'] {
+    color: #0056b3;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  main {
+    border: $border-style;
+    padding: $padding-base;
+    background-color: #fff;
+
+    h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: #333;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    // Блок с деканом
+    .dekan {
+      overflow: hidden; // Чтобы блок не "разваливался" из-за float
+      margin-bottom: 20px;
+      line-height: 1.6;
+
+      img {
+        float: left; // Обтекание картинки текстом слева
+        margin-right: 20px; // Отступ от картинки до текста
+        margin-bottom: 10px;
+        border: 2px solid $line-color; // Используем твою переменную для рамки
+        border-radius: 4px;
+        max-width: 150px; // Ограничим размер фото
+        height: auto;
+        box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1); // Небольшой эффект глубины
+      }
+
+      strong {
+        display: block; // Выносим "Декан:" на новую строку или выделяем
+        margin-top: 10px;
+        font-size: 1.1rem;
+        color: #333;
+      }
+    }
+
+    // Общие абзацы текста
+    p {
+      font-size: 17px;
+      line-height: 1.5;
+      color: #444;
+      margin-bottom: 15px;
+      text-align: justify; // Ровный край текста как в газете
+    }
+
+    // Стили для ссылки
+    a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.2s ease;
+      border-bottom: 1px dashed #007bff;
+
+      &:hover {
+        color: #0056b3;
+        border-bottom-style: solid;
+      }
+    }
+  }
+}
