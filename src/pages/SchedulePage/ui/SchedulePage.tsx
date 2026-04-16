@@ -37,7 +37,7 @@ export function SchedulePage() {
                       {scheduleElement.subjects.map((subjectsElement) => (
                         <table key={subjectsElement.subject[0]}>
                           <tbody>
-                            {subjectsElement.subject.map((subject, subIndex, array) => (
+                            {subjectsElement.subject.map((subject, _, array) => (
                               <tr key={subject}>
                                 <td className={array.length === 1 ? 'oneSubject' : 'twoSubjects'}>
                                   {subject}
