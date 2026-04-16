@@ -28,41 +28,38 @@
       gap: 10px;
     }
 
-    // Блок с деканом
     .dekan {
-      overflow: hidden; // Чтобы блок не "разваливался" из-за float
+      overflow: hidden;
       margin-bottom: 20px;
       line-height: 1.6;
 
       img {
-        float: left; // Обтекание картинки текстом слева
-        margin-right: 20px; // Отступ от картинки до текста
+        float: left;
+        margin-right: 20px;
         margin-bottom: 10px;
-        border: 2px solid $line-color; // Используем твою переменную для рамки
+        border: 2px solid $line-color;
         border-radius: 4px;
-        max-width: 150px; // Ограничим размер фото
+        max-width: 150px;
         height: auto;
-        box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1); // Небольшой эффект глубины
+        box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
       }
 
       strong {
-        display: block; // Выносим "Декан:" на новую строку или выделяем
+        display: block;
         margin-top: 10px;
         font-size: 1.1rem;
         color: #333;
       }
     }
 
-    // Общие абзацы текста
     p {
       font-size: 17px;
       line-height: 1.5;
       color: #444;
       margin-bottom: 15px;
-      text-align: justify; // Ровный край текста как в газете
+      text-align: justify;
     }
 
-    // Стили для ссылки
     a {
       color: #007bff;
       text-decoration: none;
