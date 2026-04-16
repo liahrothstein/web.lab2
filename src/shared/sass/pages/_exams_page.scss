@@ -1,0 +1,85 @@
+@use '../abstracts' as *;
+
+.examsPage {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
+  gap: 10px;
+  padding: 10px;
+
+  nav a[href='/web.lab2/exams'] {
+    color: #0056b3;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  main {
+    border: $border-style;
+    padding: $padding-base;
+    background-color: #fff;
+
+    h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: #333;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .examContainer {
+      display: flex;
+      flex-direction: row;
+      gap: 60px;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+
+    .tests,
+    .exams {
+      flex: 1;
+      min-width: 280px;
+
+      h4 {
+        font-size: 19px;
+        margin-bottom: 15px;
+        color: #333;
+        border-bottom: 2px solid $line-color;
+        padding-bottom: 5px;
+        display: inline-block;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          margin-bottom: 12px;
+          font-size: 16px;
+          line-height: 1.4;
+          position: relative;
+          padding-left: 20px;
+
+          &::before {
+            content: '🔹';
+            position: absolute;
+            left: 0;
+            font-size: 12px;
+            top: 4px;
+          }
+
+          strong {
+            color: #000;
+            font-weight: 600;
+          }
+
+          span {
+            color: #666;
+          }
+        }
+      }
+    }
+  }
+}

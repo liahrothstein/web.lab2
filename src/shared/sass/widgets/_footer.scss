@@ -1,0 +1,32 @@
+@use '../abstracts' as *;
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  border: $border-style;
+  background-color: #e1f5fe;
+
+  h4 {
+    display: none;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-right: $border-style;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    background-color: #c8e6c9;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &:hover {
+      background-color: darken(#c8e6c9, 5%);
+    }
+  }
+}

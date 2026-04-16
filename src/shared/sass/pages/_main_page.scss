@@ -1,0 +1,50 @@
+@use '../abstracts' as *;
+
+.mainPage {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
+  gap: 10px;
+  padding: 10px;
+
+  nav a[href='/web.lab2/'] {
+    color: #0056b3;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  main {
+    border: $border-style;
+    padding: $padding-base;
+    background-color: #fff;
+
+    h3,
+    h4 {
+      margin-top: 0;
+    }
+
+    h3 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: #333;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .photo,
+    .gsu {
+      max-width: 250px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .info {
+      margin-bottom: 20px;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}
