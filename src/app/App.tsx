@@ -1,4 +1,4 @@
-import { FacPage, GroupPage, MainPage, SchedulePage } from '@pages/index';
+import { ExamsPage, FacPage, GroupPage, MainPage, SchedulePage } from '@pages/index';
 import { Navigate, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
       <Route path="/web.lab2/group" element={<GroupPage />} />
       <Route path="/web.lab2/fac" element={<FacPage />} />
       <Route path="/web.lab2/schedule" element={<SchedulePage />} />
+      <Route path="/web.lab2/exams" element={<ExamsPage />} />
     </Routes>
   );
 }
